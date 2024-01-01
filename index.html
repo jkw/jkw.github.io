@@ -1,1 +1,65 @@
-Herp ma Derp!
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>jkw.github.io</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- <link rel="shortcut icon" type="image/png" href="{% static 'images/NiftoIcon.ico'%}"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.fixed-action-btn');
+      var instances = M.FloatingActionButton.init(elems, {
+        direction: 'left',
+        hoverEnabled: false
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper teal">
+          <a href="#" class="brand-logo center">jkw</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contributions">Contributions</a></li>
+            <li><a href="#cv">CV</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+        Content, ish.
+    </div>
+  </main>
+  <footer class="page-footer teal" style="position: fixed; left: 0; bottom: 0; width: 100%; color: white; text-align: center; height: 64px;">
+
+      <!-- actionbuttton -->
+      <div class="fixed-action-btn" style="margin-bottom: 14px;">
+      <a class="btn-floating btn-large">
+        <i class="large material-icons">apps</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
+    <!-- /actionbuttton -->
+    <div class="nav-wrapper">
+      &copy; 202X Kristian "jkw" Wedmark
+    </div>
+  </footer>
+</body>
+
+</html>
